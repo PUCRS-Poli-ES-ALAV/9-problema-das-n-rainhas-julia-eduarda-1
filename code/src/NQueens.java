@@ -1,6 +1,11 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class NQueens {
     final int queens;
     private int board[][];
+    static List<List<Integer> > result = new ArrayList<List<Integer> >();
+    static boolean[] cols,leftDiagonal,rightDiagonal;
     public NQueens(int queens){
         this.queens =queens;
         this.board = createBoard();
